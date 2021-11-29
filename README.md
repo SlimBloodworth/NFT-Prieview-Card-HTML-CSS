@@ -33,8 +33,6 @@ Users should be able to:
 
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [To View Live Site](https://slimbloodworth.github.io/NFT-Prieview-Card-HTML-CSS/)
 
 ## My process
