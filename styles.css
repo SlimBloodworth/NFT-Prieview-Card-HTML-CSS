@@ -1,0 +1,158 @@
+    :root {
+       /*COLORS PRIMARY*/
+       --soft-blue: hsl(215, 51%, 70%);
+       --cyan: hsl(178, 100%, 50%);
+       /*COLORS NEUTRAL*/
+       --blue-main-BG: hsl(217, 54%, 11%);
+       --blue-card-BG: hsl(216, 50%, 16%);
+       --blue-line: hsl(215, 32%, 27%);
+       --white: hsl(0, 0%, 100%);
+   }
+   /*RESETS*/
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   /*MAIN BODY*/
+   
+   body {
+       font-family: 'Outfit', sans-serif;
+       background-color: var(--blue-main-BG);
+       justify-content: center;
+       align-items: center;
+       display: flex;
+   }
+   
+   h1 {
+       font-weight: 600;
+       font-size: 24px;
+   }
+   
+   h2,
+   span {
+       color: var(--soft-blue);
+       font-size: 18px;
+       font-weight: 300;
+   }
+   
+   p,
+   .countdown-container {
+       font-size: 18px;
+   }
+   /*ACTIVE STATES*/
+   
+   h1:hover {
+       cursor: pointer;
+       color: var(--cyan);
+   }
+   
+   .creator-container p:hover {
+       cursor: pointer;
+       color: var(--cyan);
+   }
+   
+   .image-container img:hover {
+       opacity: 0.5;
+       cursor: pointer;
+   }
+   
+   .image-container:hover::after {
+       content: url(./images/icon-view.svg);
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       pointer-events: none;
+       transform: translate(-50%, -50%);
+   }
+   /*CLASSES*/
+   
+   .main-container {
+       background-color: var(--blue-card-BG);
+       border-radius: 15px;
+       box-shadow: 20px 10px 20px 10px black;
+       margin: 50% auto;
+       display: inline-block;
+       line-height: 1.5;
+       height: 620px;
+       width: 350px;
+       color: var(--white);
+   }
+   
+   .image-container {
+       background-color: var(--cyan);
+       border-radius: 16px;
+       height: 300px;
+       width: 300px;
+   }
+   /*--- snippet of  Chris Lee's code I used to help debug my
+.image-container:hover::after {} ---
+https://github.com/Chris94Lee  Incredibly usful code Chris!!---
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #00fff8;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}*/
+   
+   .image-container img {
+       background-repeat: no-repeat;
+       background-size: cover;
+       border-radius: 15px;
+       position: relative;
+       height: 300px;
+       width: 300px;
+   }
+   
+   h1,
+   .text-container,
+   .countdown-container,
+   .image-container,
+   .creator-container {
+       margin: 25px;
+   }
+   
+   .countdown-container p {
+       color: var(--cyan);
+   }
+   
+   .countdown-container span {
+       float: right;
+   }
+   
+   .creator-container {
+       border-top: 1px solid var(--blue-line);
+       padding: 12px;
+   }
+   
+   .creator-container img {
+       height: 40px;
+       width: 40px;
+       border: 1px solid var(--white);
+       border-radius: 50%;
+   }
+   
+   .creator-container p {
+       float: right;
+   }
+   
+   .attribution {
+       font-size: 11px;
+       text-align: center;
+   }
+   
+   .attribution a {
+       color: hsl(228, 45%, 44%);
+   }
+   
+   @media only screen and (max-width: 350px) {
+       .mainContainer {
+           width: 75%;
+       }
+   }
