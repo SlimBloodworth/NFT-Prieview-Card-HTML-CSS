@@ -39,6 +39,8 @@
    
    p,
    .countdown-container {
+       /*display: flex;
+       align-items: center; here for testing purposes*/
        font-size: 18px;
    }
    /*ACTIVE STATES*/
@@ -48,7 +50,7 @@
        color: var(--cyan);
    }
    
-   .creator-container p:hover {
+   .creator-container a:hover {
        cursor: pointer;
        color: var(--cyan);
    }
@@ -81,6 +83,7 @@
    }
    
    .image-container {
+       position: relative;
        background-color: var(--cyan);
        border-radius: 16px;
        height: 300px;
